@@ -34,6 +34,7 @@
         class="loading-bar-element"
         *ngIf="progress != 'finished'"></div>
     </div>
+    
     <app-project
       *ngFor="let prj of projects; let i = index"
       [project]="prj"
