@@ -11,6 +11,8 @@ export class ProjectsService {
     { name: 'Learn JavaScript, HTML and CSS', description: 'Absolutely required to dive deep into Angular and all its features', status: 'critical'},
   ];
 
+  spinner = false;
+
   loadProjects(): Observable<Project[]> {
     const prjLoader = Observable.create((observer: Observer<Project[]>) => {
       setTimeout(() => {
